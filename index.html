@@ -17,6 +17,7 @@ h1{font-size:26px;margin:0 0 4px} h2{font-size:18px;margin:36px 0 12px}
 .bar .n{background:var(--new)} .bar .o{background:var(--old)}
 .legend{display:flex;gap:16px;font-size:13px;color:var(--muted);margin-top:8px;flex-wrap:wrap}
 .dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px}
+.note{color:var(--muted);margin:-4px 0 12px;font-size:14px}
 .filters{display:flex;gap:8px;margin-bottom:12px;flex-wrap:wrap}
 .filters button{border:1px solid var(--line);background:var(--card);color:var(--fg);padding:6px 12px;border-radius:999px;cursor:pointer;font:inherit;font-size:13px}
 .filters button.on{background:var(--fg);color:var(--bg);border-color:var(--fg)}
@@ -39,15 +40,15 @@ tr[data-win=new] td.name{box-shadow:inset 3px 0 var(--new)} tr[data-win=old] td.
 @media (max-width:640px){.stats,.cols{grid-template-columns:1fr}.cmp{gap:8px}}
 </style></head><body><div class="wrap">
 <h1>Feedback giao diện Mobile — Bản mới vs Bản cũ</h1>
-<p class="sub">Người đánh giá: Windy · 30/10/2026 · Tiêu chí: bố cục, màu sắc, typography, tính nhất quán, trải nghiệm người dùng</p>
+<p class="sub">Người đánh giá: Chình BA · 30/10/2026</p>
 
 <div class="card">
  <div class="stats">
-  <div class="stat"><div class="v">24</div><div class="l">Màn đã đánh giá</div></div>
-  <div class="stat new"><div class="v">9</div><div class="l">Màn chọn bản mới (38%)</div></div>
-  <div class="stat old"><div class="v">15</div><div class="l">Màn chọn bản cũ (62%)</div></div>
+  <div class="stat"><div class="v">23</div><div class="l">Màn đã đánh giá</div></div>
+  <div class="stat new"><div class="v">9</div><div class="l">Màn chọn bản mới (39%)</div></div>
+  <div class="stat old"><div class="v">14</div><div class="l">Màn chọn bản cũ (61%)</div></div>
  </div>
- <div class="bar"><div class="n" style="width:37.50%"></div><div class="o" style="width:62.50%"></div></div>
+ <div class="bar"><div class="n" style="width:39.13%"></div><div class="o" style="width:60.87%"></div></div>
  <div class="legend"><span><i class="dot" style="background:var(--new)"></i>Bản mới đạt hơn</span><span><i class="dot" style="background:var(--old)"></i>Bản cũ đạt hơn</span></div>
 </div>
 
@@ -58,38 +59,38 @@ tr[data-win=new] td.name{box-shadow:inset 3px 0 var(--new)} tr[data-win=old] td.
 </div>
 
 <h2>Đánh giá chi tiết từng màn</h2>
+<p class="note">Dấu <span class="mk yes">✔</span> đánh dấu bản có giao diện đẹp hơn bản còn lại; ô để trống là không chọn.</p>
 <div class="filters" role="group" aria-label="Lọc">
- <button class="on" data-f="all">Tất cả (24)</button>
+ <button class="on" data-f="all">Tất cả (23)</button>
  <button data-f="new">Bản mới đạt hơn (9)</button>
- <button data-f="old">Bản cũ đạt hơn (15)</button>
+ <button data-f="old">Bản cũ đạt hơn (14)</button>
 </div>
 <div class="card tbl"><table>
 <thead><tr><th>#</th><th>Màn</th><th class="c">Bản mới</th><th class="c">Bản cũ</th><th>Chi tiết</th></tr></thead>
 <tbody>
-<tr data-win="new"><td class="num">1</td><td class="name">Đăng nhập</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td>Bố cục cảm giác hài hòa hơn, trải nghiệm người dùng tốt hơn. <a class="imglink" href="#cmp-dangnhap">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">2</td><td class="name">Màn quên mật khẩu</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-quenmatkhau">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">3</td><td class="name">Goni</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-goni">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">4</td><td class="name">Trang chủ</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-trangchu">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">5</td><td class="name">Danh sách dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-danhsachduan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">6</td><td class="name">Tạo dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taoduan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">7</td><td class="name">Chi tiết dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-chitietduan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">8</td><td class="name">Dự án</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-duan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">9</td><td class="name">Kanban</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-kanban">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">10</td><td class="name">Xem dự án dạng lịch</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-lich">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">11</td><td class="name">Xem dự án dạng Gantt</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-gantt">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">12</td><td class="name">Tạo tác vụ</td><td class="c"><span class="mk none" title="Chưa chọn">—</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taotacvu">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">13</td><td class="name">Chi tiết tác vụ</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-chitiettacvu">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">14</td><td class="name">Tài khoản liên kết</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taikhoanlienket">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">15</td><td class="name">Thêm tài khoản liên kết</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-themtaikhoanlienket">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">16</td><td class="name">Kết nối tài khoản</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-ketnoitaikhoan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="new"><td class="num">17</td><td class="name">Thông báo</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-thongbao">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">18</td><td class="name">Tạo mới</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taomoi">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">19</td><td class="name">Cài đặt</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-caidat">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">20</td><td class="name">Mời nhân viên</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span></td></tr>
-<tr data-win="old"><td class="num">21</td><td class="name">Tổng quan</td><td class="c"><span class="mk no" title="Không chọn">✘</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-tongquan">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">22</td><td class="name">Danh bạ Zalo</td><td class="c"><span class="mk none" title="Chưa chọn">—</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-danhbazalo">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">23</td><td class="name">Phân loại</td><td class="c"><span class="mk none" title="Chưa chọn">—</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-phanloai">Xem ảnh so sánh ↓</a></td></tr>
-<tr data-win="old"><td class="num">24</td><td class="name">Tạo mới</td><td class="c"><span class="mk none" title="Chưa chọn">—</span></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span></td></tr>
+<tr data-win="new"><td class="num">1</td><td class="name">Đăng nhập</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td>Bố cục cảm giác hài hòa hơn, trải nghiệm người dùng tốt hơn. <a class="imglink" href="#cmp-dangnhap">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">2</td><td class="name">Màn quên mật khẩu</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-quenmatkhau">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">3</td><td class="name">Goni</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-goni">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">4</td><td class="name">Trang chủ</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-trangchu">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">5</td><td class="name">Danh sách dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-danhsachduan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">6</td><td class="name">Tạo dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taoduan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">7</td><td class="name">Chi tiết dự án</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-chitietduan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">8</td><td class="name">Dự án</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-duan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">9</td><td class="name">Kanban</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-kanban">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">10</td><td class="name">Xem dự án dạng lịch</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-lich">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">11</td><td class="name">Xem dự án dạng Gantt</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-gantt">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">12</td><td class="name">Tạo tác vụ</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taotacvu">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">13</td><td class="name">Chi tiết tác vụ</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-chitiettacvu">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">14</td><td class="name">Tài khoản liên kết</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taikhoanlienket">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">15</td><td class="name">Thêm tài khoản liên kết</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-themtaikhoanlienket">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">16</td><td class="name">Kết nối tài khoản</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-ketnoitaikhoan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="new"><td class="num">17</td><td class="name">Thông báo</td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td class="c"></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-thongbao">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">18</td><td class="name">Tạo mới</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-taomoi">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">19</td><td class="name">Cài đặt</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-caidat">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">20</td><td class="name">Mời nhân viên</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span></td></tr>
+<tr data-win="old"><td class="num">21</td><td class="name">Tổng quan</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-tongquan">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">22</td><td class="name">Danh bạ Zalo</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-danhbazalo">Xem ảnh so sánh ↓</a></td></tr>
+<tr data-win="old"><td class="num">23</td><td class="name">Phân loại</td><td class="c"></td><td class="c"><span class="mk yes" title="Đạt">✔</span></td><td><span class="muted">Chưa có nhận xét</span> <a class="imglink" href="#cmp-phanloai">Xem ảnh so sánh ↓</a></td></tr>
 </tbody></table></div>
 
 <h2 id="cmp-dangnhap">So sánh hình ảnh — Đăng nhập</h2>
